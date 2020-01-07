@@ -35,8 +35,8 @@ struct CommonStat
     int IsSticky;
 };
 
-int32_t GetStat(const char* path, struct stat* buf);
-int GetCommonStat(const char* path, CommonStat* cs);
+int32_t GetFStat(const int fildes, struct stat* buf);
+int GetCommonFStat(const int fildes, CommonStat* cs);
 
 PAL_END_EXTERNC
 
